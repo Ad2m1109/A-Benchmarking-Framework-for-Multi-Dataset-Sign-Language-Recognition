@@ -12,7 +12,7 @@ import sign_mnist_dataset
 SELECTED_DATASET = "SignMnistDataset"
 DATA_DIR = "archive" # Relative to the current script's directory (dataset number 1/)
 MODEL_FILENAME = "sign_language_model_sign_mnist.h5"
-MODEL_SAVE_DIR = "trained_models" # Relative to the current script's directory (dataset number 1/)
+MODEL_SAVE_DIR = "../trained_models" # Relative to the current script's directory (dataset number 1/)
 
 # Construct absolute paths for the inference function
 current_dir = os.path.dirname(os.path.abspath(__file__))

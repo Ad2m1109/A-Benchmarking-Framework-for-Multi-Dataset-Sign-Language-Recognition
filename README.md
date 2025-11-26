@@ -8,24 +8,22 @@ This project aims to develop a sign language recognition model capable of identi
 - `sign_mnist_dataset.py`: Implements the `SignMnistDataset` by inheriting from `BenchmarkDataset` and registers it with the `DatasetRegistry`.
 - `npy_dataset.py`: Implements the `NpyDataset` by inheriting from `BenchmarkDataset` and registers it with the `DatasetRegistry` for datasets stored in `.npy` format.
 - `README.md`: This file.
+- `trained_models/`: Contains all trained models (`sign_language_model_sign_mnist.h5`, `sign_language_model_digits.h5`, `sign_language_model_ardamavi.h5`).
 - `dataset number 1/`: Contains all code and data for the Sign MNIST dataset.
     - `archive/`: Contains the raw dataset files (`sign_mnist_train.csv`, `sign_mnist_test.csv`).
     - `train.py`: Script to train the model for this dataset.
     - `deploy.py`: Script to deploy the trained model for real-time prediction.
     - `summary.md`: A detailed outline of the model training steps for this dataset.
-    - `trained_models/`: Stores trained models specific to this dataset (e.g., `sign_language_model_sign_mnist.h5`).
 - `dataset number 2/`: Contains all code and data for the NPY-based sign language digits dataset.
     - `archive/Sign-language-digits-dataset/`: Contains the raw dataset files (`X.npy`, `Y.npy`).
     - `train.py`: Script to train the model for this dataset.
     - `deploy.py`: Script to deploy the trained model for real-time prediction.
     - `summary.md`: A detailed outline of the model training steps for this dataset.
-    - `trained_models/`: Stores trained models specific to this dataset (e.g., `sign_language_model_digits.h5`).
 - `dataset number 3/`: Contains all code and data for the ArdaMavi sign language digits dataset.
     - `archive/`: Contains the raw dataset files (`X.npy`, `Y.npy`).
     - `train.py`: Script to train the model for this dataset.
     - `deploy.py`: Script to deploy the trained model for real-time prediction.
     - `summary.md`: A detailed outline of the model training steps for this dataset.
-    - `trained_models/`: Stores trained models specific to this dataset (e.g., `sign_language_model_ardamavi.h5`).
 
 ## Dataset Management
 
@@ -90,7 +88,8 @@ To train the model for a specific dataset (e.g., Sign MNIST):
     ```bash
     python3 train.py
     ```
-    This will train the model and save it to `dataset number 1/trained_models/sign_language_model_sign_mnist.h5`.
+    ```
+    This will train the model and save it to `trained_models/sign_language_model_sign_mnist.h5`.
 
 To train the model for the NPY-based digits dataset:
 1.  Navigate to the dataset's directory:
@@ -101,7 +100,8 @@ To train the model for the NPY-based digits dataset:
     ```bash
     python3 train.py
     ```
-    This will train the model and save it to `dataset number 2/trained_models/sign_language_model_digits.h5`.
+    ```
+    This will train the model and save it to `trained_models/sign_language_model_digits.h5`.
 
 ### Real-time Prediction
 

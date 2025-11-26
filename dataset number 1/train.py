@@ -17,7 +17,7 @@ from sign_mnist_dataset import SignMnistDataset # This import registers the data
 SELECTED_DATASET = "SignMnistDataset"
 DATA_DIR = "archive" # Relative to the current script's directory (dataset number 1/)
 MODEL_FILENAME = "sign_language_model_sign_mnist.h5"
-MODEL_SAVE_DIR = "trained_models" # Relative to the current script's directory (dataset number 1/)
+MODEL_SAVE_DIR = "../trained_models" # Relative to the current script's directory (dataset number 1/)
 
 # Ensure model save directory exists
 os.makedirs(MODEL_SAVE_DIR, exist_ok=True)

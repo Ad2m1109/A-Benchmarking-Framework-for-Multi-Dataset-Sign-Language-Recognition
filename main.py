@@ -21,17 +21,17 @@ def main():
         choice = input("Enter your choice (1-4): ")
 
         if choice == '1':
-            model_path = os.path.join("dataset number 1", "trained_models", "sign_language_model_sign_mnist.h5")
+            model_path = os.path.join("trained_models", "sign_language_model_sign_mnist.h5")
             data_dir = os.path.join("dataset number 1", "archive")
             dataset_name = "SignMnistDataset"
             run_realtime_prediction(model_path, dataset_name, data_dir)
         elif choice == '2':
-            model_path = os.path.join("dataset number 2", "trained_models", "sign_language_model_digits.h5")
+            model_path = os.path.join("trained_models", "sign_language_model_digits.h5")
             data_dir = os.path.join("dataset number 2", "archive", "Sign-language-digits-dataset")
             dataset_name = "NpyDataset"
             run_realtime_prediction(model_path, dataset_name, data_dir)
         elif choice == '3':
-            model_path = os.path.join("dataset number 3", "trained_models", "sign_language_model_ardamavi.h5")
+            model_path = os.path.join("trained_models", "sign_language_model_ardamavi.h5")
             data_dir = os.path.join("dataset number 3", "archive")
             dataset_name = "ArdaMaviDataset"
             run_realtime_prediction(model_path, dataset_name, data_dir)

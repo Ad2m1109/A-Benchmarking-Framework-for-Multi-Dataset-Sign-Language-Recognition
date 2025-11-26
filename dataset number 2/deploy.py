@@ -12,7 +12,7 @@ import npy_dataset
 SELECTED_DATASET = "NpyDataset"
 DATA_DIR = "archive/Sign-language-digits-dataset" # Relative to the current script's directory (dataset number 2/)
 MODEL_FILENAME = "sign_language_model_digits.h5"
-MODEL_SAVE_DIR = "trained_models" # Relative to the current script's directory (dataset number 2/)
+MODEL_SAVE_DIR = "../trained_models" # Relative to the current script's directory (dataset number 2/)
 
 # Construct absolute paths for the inference function
 current_dir = os.path.dirname(os.path.abspath(__file__))

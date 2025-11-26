@@ -17,7 +17,7 @@ from npy_dataset import NpyDataset # This import registers the dataset
 SELECTED_DATASET = "NpyDataset"
 DATA_DIR = "archive/Sign-language-digits-dataset" # Relative to the current script's directory (dataset number 2/)
 MODEL_FILENAME = "sign_language_model_digits.h5"
-MODEL_SAVE_DIR = "trained_models" # Relative to the current script's directory (dataset number 2/)
+MODEL_SAVE_DIR = "../trained_models" # Relative to the current script's directory (dataset number 2/)
 
 # Ensure model save directory exists
 os.makedirs(MODEL_SAVE_DIR, exist_ok=True)

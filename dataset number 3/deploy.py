@@ -12,7 +12,7 @@ import ardamavi_dataset
 SELECTED_DATASET = "ArdaMaviDataset"
 DATA_DIR = "archive" # Relative to the current script's directory (dataset number 3/)
 MODEL_FILENAME = "sign_language_model_ardamavi.h5"
-MODEL_SAVE_DIR = "trained_models" # Relative to the current script's directory (dataset number 3/)
+MODEL_SAVE_DIR = "../trained_models" # Relative to the current script's directory (dataset number 3/)
 
 # Construct absolute paths for the inference function
 current_dir = os.path.dirname(os.path.abspath(__file__))
