@@ -26,22 +26,22 @@ def main():
             model_path = os.path.join("trained_models", "sign_language_model_sign_mnist.h5")
             data_dir = os.path.join("dataset number 1", "archive")
             dataset_name = "SignMnistDataset"
-            run_realtime_prediction(model_path, dataset_name, data_dir)
+            run_realtime_prediction(model_path, dataset_name)
         elif choice == '2':
             model_path = os.path.join("trained_models", "sign_language_model_digits.h5")
             data_dir = os.path.join("dataset number 2", "archive", "Sign-language-digits-dataset")
             dataset_name = "NpyDataset"
-            run_realtime_prediction(model_path, dataset_name, data_dir)
+            run_realtime_prediction(model_path, dataset_name)
         elif choice == '3':
             model_path = os.path.join("trained_models", "sign_language_model_ardamavi.h5")
             data_dir = os.path.join("dataset number 3", "archive")
             dataset_name = "ArdaMaviDataset"
-            run_realtime_prediction(model_path, dataset_name, data_dir)
+            run_realtime_prediction(model_path, dataset_name)
         elif choice == '4':
             model_path = os.path.join("trained_models", "sign_language_model_indian.h5")
             data_dir = os.path.join("dataset number 4", "archive", "ISL_Dataset")
             dataset_name = "IndianSignLanguageDataset"
-            run_realtime_prediction(model_path, dataset_name, data_dir)
+            run_realtime_prediction(model_path, dataset_name)
         elif choice == '5':
             print("Exiting...")
             break
